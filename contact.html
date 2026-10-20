@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me - Stefy Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a40, #4b2067, #a83279);
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            background-color: #171738;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            color: #ff79c6;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #ff79c6;
+        }
+
+        .contact {
+            text-align: center;
+            padding: 40px 8%;
+        }
+
+        .contact h1 {
+            color: #ff79c6;
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .contact p {
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
+
+        .contact-box {
+            background-color: #292957;
+            max-width: 550px;
+            margin: auto;
+            padding: 30px;
+            border: 2px solid #ff79c6;
+            border-radius: 15px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            background-color: #ff79c6;
+            color: #171738;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: white;
+        }
+
+        .details {
+            margin-top: 25px;
+            line-height: 2;
+        }
+
+        footer {
+            background-color: #171738;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">STEFY.</div>
+
+        <nav>
+            <a href="./home.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./skill.html">Skills</a>
+            <a href="./certificate.html">Certificates</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h1>Contact Me</h1>
+
+        <p>
+            Have a question or want to connect with me?
+            Feel free to contact me!
+        </p>
+
+        <div class="contact-box">
+            <form action="annistefyngl3@gmail.com"
+                  method="post" enctype="text/plain">
+
+                <input type="text" name="Name"
+                       placeholder="Enter Your Name" required>
+
+                <input type="email" name="Email"
+                       placeholder="Enter Your Email" required>
+
+                <input type="text" name="Subject"
+                       placeholder="Enter Subject" required>
+
+                <textarea name="Message"
+                          placeholder="Write Your Message"
+                          required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+            <div class="details">
+                <p>📧 Email: annistefyngl3@gmail.com</p>
+                <p>💻 Interested in Web Development</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Stefy Portfolio | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

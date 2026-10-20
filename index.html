@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #141e30;
+            color: white;
+        }
+
+        header {
+            background: #0b132b;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        header h2 {
+            color: #00f5d4;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            color: #00f5d4;
+        }
+
+        section {
+            padding: 80px 10%;
+            text-align: center;
+            min-height: 300px;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #00f5d4;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #ffb703;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 15px;
+        }
+
+        .home {
+            padding-top: 120px;
+            padding-bottom: 120px;
+            background: linear-gradient(
+                to right, #141e30, #243b55
+            );
+        }
+
+        .home h1 span {
+            color: #ffb703;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #00f5d4;
+            color: #141e30;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #ffb703;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #243b55;
+            padding: 25px;
+            width: 230px;
+            border-radius: 15px;
+            border: 1px solid #00f5d4;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            background: #3a506b;
+        }
+
+        .card h2 {
+            color: #00f5d4;
+        }
+
+        #about, #certificates, #contact {
+            background: #1c2541;
+        }
+
+        .contact-box {
+            max-width: 550px;
+            margin: auto;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 13px;
+            margin: 10px 0;
+            border: 1px solid #00f5d4;
+            border-radius: 8px;
+            background: #243b55;
+            color: white;
+            font-size: 15px;
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
+        }
+
+        button {
+            background: #00f5d4;
+            color: #141e30;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #ffb703;
+        }
+
+        footer {
+            background: #0b132b;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                justify-content: center;
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            section {
+                padding: 60px 5%;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <h2>Stefy.</h2>
+
+        <nav>
+            <a href="./home.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./certificate.html">Certificates</a>
+            <a href="./skill.html">Skills</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+        <p>WELCOME TO MY PORTFOLIO</p>
+
+        <h1>Hello, I'm <span>Stefy!</span></h1>
+
+        <h2>Aspiring Web Developer</h2>
+
+        <p>
+            I am a B.Tech student passionate about coding,
+            web development, and learning new technologies.
+            I love creating attractive and user-friendly websites.
+        </p>
+
+        <a href="#about" class="btn">Explore More</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h1>About Me</h1>
+
+        <p>
+            Hello! I am Stefy, a B.Tech student interested
+            in technology, programming, and web development.
+        </p>
+
+        <p>
+            I enjoy learning new things, improving my coding
+            skills, and creating creative website designs.
+            My ambition is to become a skilled web developer.
+        </p>
+
+        <h2>My Education</h2>
+        <p>B.Tech Student | Information Technology</p>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <h1>My Certificates</h1>
+
+        <p>Here are some examples of certificates you can display.</p>
+
+        <div class="container">
+
+            <div class="card">
+                <h2>HTML Certificate</h2>
+                <p>Web page structure and HTML fundamentals.</p>
+                <p>Platform: Your course provider</p>
+            </div>
+
+            <div class="card">
+                <h2>CSS Certificate</h2>
+                <p>Website styling and design fundamentals.</p>
+                <p>Platform: Your course provider</p>
+            </div>
+
+            <div class="card">
+                <h2>Programming Certificate</h2>
+                <p>Programming and problem-solving skills.</p>
+                <p>Platform: Your course provider</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h1>My Skills</h1>
+
+        <p>Technologies I am learning and practising.</p>
+
+        <div class="container">
+
+            <div class="card">
+                <h2>HTML</h2>
+                <p>Creating web page structures.</p>
+            </div>
+
+            <div class="card">
+                <h2>CSS</h2>
+                <p>Designing beautiful websites.</p>
+            </div>
+
+            <div class="card">
+                <h2>C++</h2>
+                <p>Learning programming logic.</p>
+            </div>
+
+            <div class="card">
+                <h2>Python</h2>
+                <p>Practising programming concepts.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact Me</h1>
+
+        <p>Have a question or want to connect? Send me a message.</p>
+
+        <div class="contact-box">
+
+            <form action="annistefyngl3@gmail.com"
+                  method="post" enctype="text/plain">
+
+                <input type="text" name="Name"
+                       placeholder="Your Name" required>
+
+                <input type="email" name="Email"
+                       placeholder="Your Email" required>
+
+                <input type="text" name="Subject"
+                       placeholder="Subject" required>
+
+                <textarea name="Message"
+                          placeholder="Your Message"
+                          required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+            <p>Email: annistefyngl3@gmail.com</p>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Stefy | My Personal Portfolio</p>
+    </footer>
+
+</body>
+</html>

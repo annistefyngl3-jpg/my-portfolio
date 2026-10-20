@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stefy Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a40, #4b2067, #a83279);
+            color: white;
+            min-height: 100vh;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 8%;
+            background-color: #171738;
+        }
+
+        .logo {
+            color: #ff79c6;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            color: #ff79c6;
+        }
+
+        .home {
+            min-height: 75vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px 8%;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .content {
+            max-width: 550px;
+        }
+
+        .content h3 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .content h1 {
+            font-size: 48px;
+            color: #ff79c6;
+            margin-bottom: 15px;
+        }
+
+        .content h2 {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 17px;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #ff79c6;
+            color: #171738;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .btn:hover {
+            background-color: white;
+        }
+
+        .profile {
+            width: 250px;
+            height: 250px;
+            border: 5px solid #ff79c6;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 100px;
+            background-color: #292957;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #171738;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">STEFY.</div>
+
+        <nav>
+            <a href="./home.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./skill.html">Skills</a>
+            <a href="./certificate.html">Certificates</a>
+            <a href="./contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home">
+
+        <div class="content">
+            <h3>Hello, Welcome to My Portfolio!</h3>
+
+            <h1>I'm Stefy</h1>
+
+            <h2>IT Student | Future Web Developer</h2>
+
+            <p>
+                I am a B.Tech Information Technology student
+                interested in web development and programming.
+                I enjoy learning new technologies, improving my
+                coding skills, and creating simple and creative
+                websites.
+            </p>
+
+            <a href="./about.html" class="btn">About Me</a>
+            <a href="./contact.html" class="btn">Contact Me</a>
+        </div>
+
+        <div class="profile">
+            💻
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 Stefy Portfolio | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
